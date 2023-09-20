@@ -1,0 +1,147 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container {
+  background: #07061e;
+  min-width: 600px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+.profile img {
+  margin-right: 20px;
+  width: 100px;
+  max-width: 400px;
+  height: 100%;
+  border-radius: 100%;
+}
+.connect {
+  display: flex;
+  flex-direction: row;
+}
+
+.connect img {
+  width: 30px;
+  margin: 0 20px;
+}
+.connect img:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button a {
+  margin-bottom: 20px;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    125deg,
+    hsl(256deg 38% 40%) 0%,
+    hsl(323deg 51% 59%) 33%,
+    hsl(355deg 100% 77%) 67%,
+    hsl(23deg 100% 73%) 100%
+  );
+  transition: all 0.3s ease;
+}
+
+.button a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+  }
+  .container {
+    min-width: 200px;
+
+    height: 100vh;
+    background: #07061e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile_name {
+    margin: 0;
+  }
+  .profile_desc {
+    margin: 0 0 20px 0;
+  }
+
+  .profile img {
+    max-width: 400px;
+    border-radius: 100%;
+    margin: 0;
+  }
+  .connect {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .connect img {
+    width: 30px;
+    margin: 0 5px;
+  }
+
+  .button a {
+    margin-bottom: 20px;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-image: linear-gradient(
+      125deg,
+      hsl(256deg 38% 40%) 0%,
+      hsl(323deg 51% 59%) 33%,
+      hsl(355deg 100% 77%) 67%,
+      hsl(23deg 100% 73%) 100%
+    );
+    transition: all 0.3s ease;
+  }
+}
